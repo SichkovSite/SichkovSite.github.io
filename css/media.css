@@ -1,0 +1,755 @@
+@media (min-width: 1200px) {
+    .sixthBlock .textBox .textWrapper_6 p {
+        padding: 50px 0 0;
+    }
+}
+
+@media(max-width: 1200px) {
+    header {
+        max-height: 100%;
+        padding-bottom: 10vh;
+    }
+}
+
+@media (max-width: 1200px),
+(min-width: 1200px) {
+    .wrapper {
+        padding-top: 0;
+    }
+
+    .headerBottom h1 {
+        margin-top: 20vh;
+        color: whitesmoke;
+    }
+
+    .sixthBlock .imgContainer div {
+        padding: 2.5px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    #abtCover {
+        background-color: rgba(0, 0, 0, 0.644);
+    }
+}
+
+@media (max-width: 992px) {
+    .firstBlock .headerTop {
+        justify-content: space-between;
+    }
+
+    .firstBlock .headerTop .menuCover {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0vh;
+        background-color: rgba(0, 0, 0, 0.15);
+        transition: 0.3s linear;
+    }
+
+    .firstBlock .headerTop .menuCover.active {
+        height: 100vh;
+    }
+
+    #abtCover p {
+        font-size: calc(16px (5 + 5 * 0.7) * ((100vw - 280px) / 1600));
+    }
+
+    /*............. abtCover.active2 ..............*/
+    .firstBlock #abtCover.active2 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0vh;
+        /* background-color: rgba(0, 0, 0, 0.521); */
+        background-color: rgba(0, 0, 0, 0.999);
+        transition: all 0.3s ease;
+    }
+
+
+    /*............ // abtCover.active2 ..............*/
+
+    .menu {
+        position: fixed;
+        top: 100px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    #menu_List {
+        display: block;
+        position: fixed;
+        top: -70em;
+        width: 200px;
+        margin: 0px;
+        z-index: 10;
+        transition: all 0.4s ease;
+    }
+
+    #menu_List.burgerSlider {
+        top: 100px;
+    }
+
+    #menu_List>li:not(:last-child)>a:hover {
+        color: goldenrod;
+    }
+
+    #menu_List li {
+        height: 100%;
+    }
+
+    #menu_List li a {
+        font-size: 23px;
+        padding: 4px 16px;
+        text-transform: capitalize;
+        background-color: rgba(0, 0, 0, 0.78);
+        border: 1px solid #fff;
+        border-bottom: 0px solid #fff;
+        transform: scale(1);
+    }
+
+    #menu_List>li:nth-child(6)>a {
+        border-bottom: 0px solid #fff;
+    }
+
+    #menu_List li a.pad {
+        color: goldenrod;
+        width: 33.333%;
+        border: 1px solid goldenrod;
+        transition: all 0.3s ease;
+    }
+
+    #menu_List li a.pad:hover {
+        color: #fff;
+    }
+
+    /*................ ARROWS ...................*/
+
+    a.arrow {
+        position: relative;
+    }
+
+    a.arrow:before,
+    a.arrow:after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 14px;
+        width: 10px;
+        height: 2px;
+        transform: rotate(45deg);
+        transition: all 0.3s ease;
+    }
+
+    a.arrow:after {
+        transform: rotate(-45deg);
+        right: 8px;
+
+    }
+
+    /*............. // ARROWS ...................*/
+
+    #sub {
+        /* display: block; */
+        display: none;
+        position: relative;
+        top: 0;
+        height: 100%;
+        transition: all 0.3s ease;
+    }
+
+    #sub>li>a {
+        font-size: 0px;
+        padding: 0px;
+        transition: all 0.3s ease;
+        background-color: rgba(26, 24, 24, 0.9);
+    }
+
+    #sub>li>a:hover {
+        background-color: rgba(15, 15, 15, 0.95);
+    }
+
+    #sub>li>a.changer {
+        font-size: 21px;
+        padding: 8px 16px;
+    }
+
+    /* #sub li #subSub */
+    #subSub {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0%;
+        padding: 0px;
+        height: 0px;
+        transition: all 0.3s ease;
+    }
+
+    #subSub.subChanger {
+        height: 100%;
+    }
+
+    .subSubMenuList.subChanger {
+        height: 100%;
+    }
+
+    #subSub li a {
+        display: block;
+        color: white;
+        border-color: white;
+        font-size: 0px;
+        padding: 0px;
+        transition: all 0.3s ease;
+    }
+
+    #subSub li a.subChanger {
+        font-size: 19px;
+        padding: 8px 12px;
+        transition: all 0.3s ease;
+    }
+
+    #subSub li a:hover {
+        color: white;
+        border-color: white;
+        padding: 9px 0px 8px 16px;
+    }
+
+    .menuList>li:nth-child(6)>a {
+        border-bottom: 0px solid transparent;
+    }
+
+    .firstBlock .square h1 {
+        /* font-size: 70px; */
+        font-size: calc(21px + (15 + 15 * 0.7) * ((100vw - 280px) / 1600));
+    }
+
+    .secondBlock .leftSide>h2 {
+        font-size: calc(18px + (17 + 17 * 0.7) * ((100vw - 280px) / 1600));
+    }
+
+    .secondBlock .leftSide>p {
+        font-size: calc(14px + (7 + 7 * 0.7) * ((100vw - 280px) / 1600));
+    }
+
+    .fourthBlock>.boxWrapper div h1 {
+        font-size: calc(19px + (11 + 11 * 0.7) * ((100vw - 280px) / 1600));
+    }
+
+    .fourthBlock .special span {
+        font-size: calc(8px + (8 + 8 * 0.7) * ((100vw - 280px) / 1600));
+    }
+
+    .fourthBlock p span {
+        font-size: calc(10.5px + (10.5 + 10.5 * 0.7) / ((100vw - 280px) / 1600));
+    }
+
+    .fifthBlock .square p {
+        font-size: calc(14px + (5 + 5 * 0.7) * ((100vw - 280px) / 1600));
+    }
+
+    /*................................  Burger menu appears ...................................... */
+
+    #burger {
+        display: block;
+        left: 50vw;
+        z-index: 12;
+        position: fixed;
+        top: 38px;
+    }
+
+    #burger .firstLine.active {
+        transform: rotate(45deg) translate(13px, 10px);
+    }
+
+    #burger .secondLine.active {
+        display: none;
+    }
+
+    #burger .thirdLine.active {
+        transform: rotate(-45deg) translate(9px, -5px);
+    }
+
+    /*............................. //  Burger menu appears ...................................... */
+
+    /*.................................. Menu disappears ........................................ */
+
+    .headerBottom h1 {
+        margin-top: 23vh;
+        margin-bottom: 10vh;
+    }
+
+    .sixthBlock .imgContainer div {
+        padding: 2.5px;
+        margin: 0;
+    }
+
+    .sixthBlock .textBox .textWrapper_6 h1 {
+        font-size: 32px;
+    }
+
+    .sixthBlock .textBox .textWrapper_6 p {
+        color: #4c4c4c;
+        font-family: 'Lato';
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: normal;
+        padding: 0 5px;
+    }
+
+    .sixthBlock .formWrapper_6 {
+        height: 100%;
+        max-width: 50%;
+    }
+
+    .sixthBlock .formWrapper_6 {
+        min-width: 100%;
+    }
+
+    .bottom div:nth-child(n+2)>img {
+        max-width: 100%;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 850px) {
+    .firstBlock .headerTop {
+        position: relative;
+    }
+
+    .firstBlock .headerBottom h1 {
+        font-size: 65px;
+    }
+
+    footer {
+        padding: 10px 0 0 0;
+    }
+
+    footer div:nth-child(-n+2) {
+        margin-bottom: 15px;
+    }
+
+    .bottom div {
+        display: block;
+        width: 100%;
+        height: 100vh;
+    }
+
+    footer div:nth-child(n+2) div img,
+    footer div:nth-child(n+2) div .fa {
+        transform: translateY(-20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .firstBlock .headerBottom h1 {
+        font-size: 60px;
+    }
+
+    /* .secondBlock .leftSide h2 {
+        font-size: 29px;
+    }
+*/
+
+    .thirdBlock {
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .thirdBlock .square {
+        display: flex;
+        flex: 1 2 auto;
+        position: relative;
+        top: 8%;
+        /* top: 6%; */
+        left: auto;
+    }
+
+    /* 
+    .fourthBlock .boxWrapper div p span> {
+        font-size: 19px;
+    } */
+
+    .fourthBlock .boxWrapper .sticker .boxSpecial span:first-child {
+        padding-right: 0px;
+    }
+
+    .fourthBlock .boxWrapper div p .special {
+        min-height: 100%;
+        align-items: center;
+    }
+
+    .fourthBlock .special>span {
+        font-size: calc(9px + (7 + 7 * 0.7) * ((100vw - 280px) / 1600));
+
+    }
+
+    .sixthBlock .imgContainer {
+        flex-flow: column;
+        justify-content: space-between;
+    }
+
+    .sixthBlock .imgContainer div {
+        max-height: 50vh;
+        overflow: hidden;
+    }
+
+    .sixthBlock .textBox .textWrapper_6 {
+        border: none;
+    }
+
+    .sixthBlock .textBox .textWrapper_6 h1 {
+        font-size: 25px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .sixthBlock .textBox .textWrapper_6 p {
+        font-size: 16px;
+        letter-spacing: normal;
+        margin: 0px auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .sixthBlock .imgContainer div {
+        padding: 2.5px 15px;
+        width: 100%;
+    }
+
+    .sixthBlock .formWrapper_6 {
+        max-height: 50%;
+    }
+
+    .sixthBlock .formWrapper_6 label {
+        min-width: 100%;
+    }
+
+    .sixthBlock .formWrapper_6 form label:first-child,
+    .sixthBlock .formWrapper_6 form label:nth-child(odd) {
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+
+    .bottom {
+        flex-flow: row wrap;
+    }
+
+    .bottom div h1 {
+        margin-top: 25vh;
+        font-size: 25px;
+    }
+
+    .bottom div p {
+        font-size: 20px;
+    }
+
+    .bottom div span {
+        font-size: 18px;
+    }
+
+    .bottom div:nth-child(2) span img {
+        width: 45px;
+        height: 23px;
+    }
+
+    .bottom div:nth-child(3) div a .fa {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 705px) {
+    .fourthBlock .boxWrapper div .boxSpecial {
+        max-height: 18%;
+    }
+
+    @media (max-width: 700px) {
+        .sixthBlock .textBox .textWrapper_6 p {
+            color: #4c4c4c;
+            font-family: 'Lato';
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 1px;
+            padding: 0 5px;
+        }
+
+        .sixthBlock .imgContainer div {
+            min-height: 50%;
+        }
+    }
+
+    @media (max-width: 655px) {
+        .firstBlock .headerBottom h1 {
+            font-size: 57px;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .sixthBlock .imgContainer div {
+            padding: 2.5px;
+        }
+    }
+
+    @media (max-width: 624px) {
+        .firstBlock .headerBottom h1 {
+            font-size: 55px;
+            margin-bottom: 10vh;
+        }
+
+        .secondBlock .leftSide img {
+            flex: 0 2 auto;
+        }
+    }
+
+    @media (max-width: 547px) {
+        .fourthBlock .boxWrapper div .boxSpecial {
+            max-height: 23%;
+        }
+    }
+
+    @media (max-width: 521px) {
+        .firstBlock .headerBottom h1 {
+            margin-top: 19vh;
+            margin-bottom: 0;
+        }
+
+        .fifthBlock {
+            padding-top: 15px;
+            padding-bottom: 0px;
+        }
+    }
+
+    @media (max-width: 414px) {
+        .firstBlock .headerBottom h1 {
+            font-size: 47px;
+        }
+
+        .firstBlock .btnContainer {
+            margin-top: 15vh;
+        }
+
+        /* .fourthBlock .boxWrapper div h1 {
+            font-size: 22px;
+        } */
+
+
+
+        /* .fourthBlock .boxWrapper div p>span {
+            font-size: 15px;
+        } */
+
+        .fourthBlock .boxWrapper div .boxSpecial .inner {
+            font-size: 16px;
+        }
+
+        .fourthBlock .boxWrapper div p .special {
+            flex-shrink: 8;
+        }
+
+        .fourthBlock p span {
+            font-size: calc(10.5px + (10.5 + 10.5 * 0.7) / ((100vw - 280px) / 1600));
+        }
+
+        .fourthBlock .boxWrapper div p .special span {
+            transform: rotate(90deg);
+        }
+
+        .fourthBlock .boxWrapper div .boxSpecial {
+            max-height: 15.6%;
+        }
+
+        .fifthBlock {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sixthBlock .textBox .textWrapper_6 h1 {
+            font-size: 20px;
+        }
+
+        .sixthBlock .textBox .textWrapper_6 p {
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: normal;
+            padding: 0 5px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .sixthBlock .imgContainer div {
+            padding: 2.5px;
+            margin: 0;
+        }
+    }
+
+    @media (max-width: 411px) {
+        .firstBlock .headerBottom h1 {
+            font-size: 47px;
+        }
+
+        .firstBlock .btnContainer {
+            margin-top: 130px;
+        }
+
+        .fourthBlock .boxWrapper div .boxSpecial .special {
+            flex-shrink: 9;
+            margin-right: 1.1px;
+        }
+    }
+
+    @media (max-width: 375px) {
+        .firstBlock .btnContainer {
+            margin-top: 80px;
+        }
+
+        .fourthBlock .boxWrapper div.sticker,
+        .fourthBlock .boxWrapper div.mainDish {
+            margin-top: 5px;
+        }
+
+        .fourthBlock .boxWrapper div .boxSpecial {
+            max-height: 15.41%;
+        }
+
+        .fourthBlock .boxWrapper div p>span {
+            font-size: 10.5px;
+            font-weight: bold;
+        }
+
+        .fourthBlock .boxWrapper div.sticker .inner {
+            font-weight: normal;
+            font-size: 14.6px;
+        }
+
+        .fourthBlock .boxWrapper div .boxSpecial .special {
+            flex-shrink: 9;
+        }
+
+        .fourthBlock .boxWrapper div .boxSpecial .special span {
+            font-weight: normal;
+        }
+
+        .fifthBlock {
+            display: flex;
+            align-items: center;
+            padding-top: 0;
+            padding-bottom: 0px;
+        }
+
+        .sixthBlock .textBox .textWrapper_6 img {
+            width: 100%;
+        }
+
+        .sixthBlock .textBox .textWrapper_6 h1 {
+            font-size: 20px;
+        }
+
+        .sixthBlock .textBox .textWrapper_6 p {
+            font-size: 14px;
+            line-height: 1.5;
+            letter-spacing: normal;
+            padding: 0 5px;
+            margin: 0;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .firstBlock .btnContainer {
+            margin-top: 50px;
+        }
+
+        .fourthBlock .boxWrapper div .boxSpecial {
+            max-height: 15.5%;
+        }
+
+        .fourthBlock .boxWrapper div .boxSpecial .inner {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .firstBlock .wrapper .logo img {
+            max-width: 105px;
+        }
+
+
+        header .headerTop .wrapper #abtCover {
+            padding: 120px 30px 0;
+        }
+
+        header .headerTop .wrapper #abtCover p>span.active2 {
+            top: 50px;
+            right: 48%;
+        }
+
+        .firstBlock .btnContainer {
+            max-width: 310px;
+        }
+
+        .firstBlock .btnContainer .btnWrapper1 {
+            margin-right: 5px;
+        }
+
+        .firstBlock .btnContainer .btnWrapper2 {
+            margin-left: 5px;
+        }
+
+        /* .thirdBlock .square {
+            top: 12%;
+        } */
+
+        .fourthBlock .boxWrapper div .boxSpecial {
+            max-height: 15%;
+        }
+
+        .fourthBlock .boxWrapper div p {
+            font-size: 12.5px;
+
+        }
+
+        .fourthBlock .boxWrapper div .boxSpecial .inner {
+            font-size: 12.5px;
+        }
+
+        .fourthBlock .boxWrapper div .boxSpecial .special {
+            flex-shrink: 10;
+            margin-right: 2px;
+        }
+
+        .fifthBlock {
+            padding: 0;
+        }
+
+        .fifthBlock .square h1 {
+            padding: 0;
+            margin: 0;
+        }
+
+        .fifthBlock .square p {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 280px) {
+    .firstBlock .wrapper .logo img {
+        max-width: 90px;
+    }
+
+    .fourthBlock .sticker .inner {
+        line-height: 1.5;
+    }
+
+}
